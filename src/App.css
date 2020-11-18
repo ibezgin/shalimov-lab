@@ -24,6 +24,8 @@ html, body {
 .ant-layout {
   min-height: 100%;
   height: 100vh;
+  margin: auto;
+
 }
 
 .container {
