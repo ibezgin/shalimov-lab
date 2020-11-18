@@ -126,8 +126,8 @@ export const Comparison = React.memo(() => {
           );
         }}
       </Formik>
-      <Card title="Совпадение строк в процентном соотношении:" bordered={false} style={{ width: 500 }}>
-        <Progress percent={percent} type="circle" width={300} format={percent => `${percent}%`} />
+      <Card title="Совпадение строк в процентном соотношении:" bordered={false} style={{ width: 400 }}>
+        <Progress percent={percent} type="circle" width={250} format={percent => `${percent}%`} />
       </Card>
       {/* <Title level={4} >Совпадение строк в процентном соотношении:</Title> */}
       {/* <Progress percent={percent} type="circle" width={400} format={percent => percent===100 ? "Совпадают" : `${percent}%`} /> */}
