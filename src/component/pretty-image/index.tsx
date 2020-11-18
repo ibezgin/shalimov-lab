@@ -4,7 +4,7 @@ export const PrettyImage = React.memo(() => {
   return (
     <div className={"container"}>
       <div className={"wrap"}>
-        <p>
+        <p style={{}}>
           <img className={"flower-image"} src={"./Flowers-1.jpg"} />
           </p> </div>  
     </div>

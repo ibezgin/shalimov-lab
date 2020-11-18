@@ -4,9 +4,7 @@ import { Layout, Menu } from "antd";
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
+  ThunderboltOutlined
 } from "@ant-design/icons";
 import "antd/dist/antd.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -42,9 +40,9 @@ function App() {
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu theme="dark" mode="inline" >
             {routes.map((elem, index) => (
-              <Menu.Item key={index} icon={<UserOutlined />}>
+              <Menu.Item key={index} icon={<ThunderboltOutlined />}>
                 <Link to={elem.path}>{elem.title}</Link>
               </Menu.Item>
             ))}
