@@ -1,7 +1,8 @@
 import { Formik } from "formik";
 import React, { useCallback, useMemo, useState } from "react";
 import * as FormikAntd from "formik-antd";
-import { notification, Progress } from "antd";
+import { Card, notification, Progress, Typography } from "antd";
+const { Title } = Typography;
 
 export const Comparison = React.memo(() => {
   const [percent, setPercent] = useState<number>(0);
@@ -125,7 +126,11 @@ export const Comparison = React.memo(() => {
           );
         }}
       </Formik>
-      <Progress percent={percent} type="circle" />
+      <Card title="Совпадение строк в процентном соотношении:" bordered={false} style={{ width: 500 }}>
+        <Progress percent={percent} type="circle" width={300} format={percent => percent===100 ? "Совпадают" : `${percent}%`} />
+      </Card>
+      {/* <Title level={4} >Совпадение строк в процентном соотношении:</Title> */}
+      {/* <Progress percent={percent} type="circle" width={400} format={percent => percent===100 ? "Совпадают" : `${percent}%`} /> */}
     </>
   );
 });

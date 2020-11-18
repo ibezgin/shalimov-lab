@@ -5,7 +5,9 @@
   cursor: pointer;
   transition: color 0.3s;
 }
-
+html, body {
+  height: 100%;
+}
 .trigger:hover {
   color: #1890ff;
 }
@@ -20,6 +22,7 @@
   background: #fff;
 }
 .ant-layout {
+  min-height: 100%;
   height: 100vh;
 }
 
