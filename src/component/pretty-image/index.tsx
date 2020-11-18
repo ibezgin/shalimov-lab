@@ -1,5 +1,13 @@
 import React from "react";
 
 export const PrettyImage = React.memo(() => {
-  return <></>;
+  return (
+    <div className={"container"}>
+      <div className={"wrap"}>
+        <p>
+          <img className={"flower-image"} src={"./Flowers-1.jpg"} />
+          </p> </div>  
+    </div>
+  )
+  
 });
