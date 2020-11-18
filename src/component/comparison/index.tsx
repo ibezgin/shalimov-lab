@@ -94,13 +94,13 @@ export const Comparison = React.memo(() => {
                 name={"firstString"}
                 label={"Введите первую строку"}
               >
-                <FormikAntd.Input name={"firstString"} />
+                <FormikAntd.Input name={"firstString"} required />
               </FormikAntd.Form.Item>{" "}
               <FormikAntd.Form.Item
                 name={"secondString"}
                 label={"Введите вторую строку строку"}
               >
-                <FormikAntd.Input name={"secondString"} />
+                <FormikAntd.Input name={"secondString"} required />
               </FormikAntd.Form.Item>
               <FormikAntd.Form.Item name={"submit"} colon={false}>
                 <FormikAntd.SubmitButton
